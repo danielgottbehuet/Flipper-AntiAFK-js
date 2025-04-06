@@ -1,11 +1,12 @@
 let badusb = require("badusb");
 let eventLoop = require("event_loop");
+let notify = require("notification");
 
-// === Konfiguration ===
+// === Configuration ===
 const HID_KEY_W = 26;         // HID code for "W"
-const INTERVAL_MS = 1000;     // Anti-AFK interval in milliseconds
+const INTERVAL_MS = 1000;     // Event interval
 
-// === Initialisierung ===
+// === Initializing ===
 print("Initializing BadUSB..");
 badusb.setup();
 
@@ -22,6 +23,12 @@ eventLoop.subscribe(timer, function (_subscription, _item, eventLoop) {
     }
 
     if (isSending) {
+        if(secondsElapsed & 1){
+            notify.blink("red", "long");
+        } else {
+            notify.blink("green", "long");
+        }
+        print(secondsElapsed & 1);
         secondsElapsed += 1;
         print("Anti-AFK:", secondsElapsed, "sec");
     }
