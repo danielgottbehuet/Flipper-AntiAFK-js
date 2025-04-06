@@ -35,5 +35,4 @@ This lightweight JavaScript script uses the **BadUSB module** of the Flipper Zer
 
 ### 📄 Author
 
-Daniel Gottbehüt
-Made with ❤️ for small automation hacks using the Flipper Zero.
+Daniel Gottbehüt - Made with ❤️ for small automation hacks using the Flipper Zero.
