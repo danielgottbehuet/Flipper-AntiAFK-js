@@ -9,7 +9,7 @@ This lightweight JavaScript script uses the **BadUSB module** of the Flipper Zer
 - A simple timer prints how many seconds the anti-AFK has been active
 - Useful for staying alive or avoiding auto-kick while AFK in games 😉
 
-> [!WARNING] 
+> [!CAUTION] 
 > This script is intended **for educational and testing purposes only**. Use responsibly and respect the terms of service of any games or platforms you use it with.
 
 ### 📦 Requirements
